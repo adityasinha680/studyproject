@@ -5,13 +5,13 @@ A readme for CRUD Api of all Courses available on our website.
 
 ## Contributers 
 
--Ashish Kumar <ashis08h@gmail.com> 
+- Kumar Aditya  <adityasinha680@gmail.com> 
 
 ---
 
 ## Technologies
 
-	Python 3.8.2
+	Python 3.6.2
 	Django 3.0.5
 	
 ---
