@@ -1,0 +1,82 @@
+
+ 
+.card{
+	height: 270px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    transition: box-shadow 0.1s ease-in-out;
+    border-color: #d6dbe0;
+    border-width: 1px;
+    border-radius: 3px;
+}
+.card:hover {
+  box-shadow: 0 2px 4px 2px rgba(0,0,0,.3);
+}
+.image{
+	height: 102px;
+    background-color: #c4c4c4;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.logo{
+	height: 61px;
+    padding: 7px;
+    position: absolute;
+    top: 54px;
+    left: 20px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0 hsla(0,0%,66.7%,.5);
+}
+.cardcontent{
+	padding: 28px 20px 33px;
+}
+.title{
+	height: auto;
+    line-height: 1.15;
+    color: #393f43;
+    font-family: Roboto,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+.coursedes{
+	height: 20px;
+    line-height: 1.67;
+    letter-spacing: .2px;
+    color: #23419f;
+    position: absolute;
+    bottom: 10px;
+    font-family: Roboto,sans-serif;
+    font-size: .75rem;
+    font-weight: 400;	
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+.logoimage{
+	height: 47px;
+    width: 93.0625px;
+}
+.instiname{
+	line-height: .86;
+    color: #23419f;
+    margin-bottom: 20px;
+    font-family: Roboto,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+}
+.update_form{
+     width: 60%;
+     min-width: 360px;
+     max-height: 1000px;
+
+}
+.create_form{
+     width: 60%;
+     min-width: 360px;
+     max-height: 1000px;
+     
+}
