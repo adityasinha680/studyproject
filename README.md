@@ -35,8 +35,9 @@ Password - Shanu@123
  
 ## Description of Project
 
-This is CURD Api Project in which Courses are Deployee in server(PythonAnywhere)which is an API.Paginator is also in that project which help us to find number of courses in present in our server.We can Add a new course in in that application on the otherhand we can update our exsiting courses.
+This is CURD Api Project in which Courses are Deployee in server(PythonAnywhere)which is an API.Paginator is also in that project which help us to find number of courses in present in our server.We can Add a new course in in that application on the otherhand we can update our exsiting courses.Add aand Update are working on local database it will fetch and update the data from locally, i used SQLite database for storing the data.
 To run the application :-http://127.0.0.1:8000
+
 
 
 
