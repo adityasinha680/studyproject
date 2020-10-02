@@ -1,0 +1,32 @@
+{% extends 'root.html' %}
+{% block content %}
+{% load static %}
+
+<div id="hero">
+<div class="addform">  
+  <form id="contact" action="" method="post">
+    {% csrf_token %}
+    <h4> TO UPDATE COURSES</h4>
+
+    <fieldset>
+      <input placeholder="Enter course_title" type="text" tabindex="1" required autofocus name="course_title" value="{{data.course_title}}">
+    </fieldset>
+    <fieldset>
+      <input  placeholder="Enter institute_name" type="text" tabindex="1" required autofocus name="institute_name" value="{{data.institute_name}}">
+    </fieldset>
+
+    <fieldset>
+      <input placeholder="Enter course_description" type="text" tabindex="1" required autofocus name="course_desc" value="{{data.course_desc}}">
+    </fieldset>
+  <!--   <fieldset>
+      <input placeholder="Enter course_description" type="text" tabindex="1" required autofocus name="course_desc" value="{{data.course_imges}}">
+    </fieldset> -->
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Update</button>
+    </fieldset>
+   
+  </form>
+</div>
+</div>
+
+{% endblock %}
