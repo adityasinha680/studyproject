@@ -1,7 +1,6 @@
 {% extends 'root.html' %}
 {% block content %}
 {% load static %}
-<<<<<<< HEAD
 
 <div id="hero">
 <div class="addform">  
@@ -19,42 +18,12 @@
     <fieldset>
       <input placeholder="Enter course_description" type="text" tabindex="1" required autofocus name="course_desc" value="{{data.course_desc}}">
     </fieldset>
-  <!--   <fieldset>
-      <input placeholder="Enter course_description" type="text" tabindex="1" required autofocus name="course_desc" value="{{data.course_imges}}">
-    </fieldset> -->
+   
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Update</button>
     </fieldset>
    
   </form>
-=======
-<div class="container update_form my-5">
-  {%if message%}
-<div class="alert alert-primary" role="alert">
-  {{message}}
-</div>
-{%endif%}
-<form action="/update/?name={{data.course_title}}" method="POST">
-	{% csrf_token %}
-  <div class="form-group">
-    <label>course_title</label>
-    <input type="text" class="form-control" id="course_title"  placeholder="Enter course_title" name="course_title" value="{{data.course_title}}">
-    
-  </div>
-    <div class="form-group">
-    <label>institute_name</label>
-    <input type="text" class="form-control" id="institute_name"  placeholder="Enter institute_name" name="institute_name" value="{{data.institute_name}}">
-    
-  </div>
-    <div class="form-group">
-    <label>course_desc</label>
-    <input type="text" class="form-control" id="course_desc"  placeholder="Enter course_description" name="course_desc" value="{{data.course_desc}}">
-    
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Ubdate</button>
-</form>
->>>>>>> 72f4279497219059a43c826018757ae80f00e4b1
 </div>
 </div>
 

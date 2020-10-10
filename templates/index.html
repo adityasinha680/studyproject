@@ -1,22 +1,18 @@
 {% extends 'root.html' %}
 {% block content %}
 {% load static %}
-
-
 	
 <div class="container my-2">
 	{% if result_data %}
 <div class="row">
+	
 			{% for course in result_data %}
-<<<<<<< HEAD
-
-=======
->>>>>>> 72f4279497219059a43c826018757ae80f00e4b1
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 boxes1 my-2" onclick="update('{{course.course_title}}')">
+			
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 boxes1 my-2" onclick="update('{{course.course_id}}')">
 					<a class="boxes" href="#" style="text-decoration: none; ">
 						<div class="card">
 							<div class="image">
-								<img src="https://cdn.mos.cms.futurecdn.net/nBWumA93PCj9Wa6HNce6hH.jpg"  alt="course" width="100%">
+								<img src="{{course.course_image}}"  alt="course" width="100%">
 							</div>
 							
 							<div class="logo">
@@ -44,18 +40,12 @@
 					</a>
 				</div>
 				
-
 			{% endfor %}
 
-
-
-
-		
 	</div>
 
 			<div>
 
-				
 				<nav aria-label="...">
 				  <ul class="pagination justify-content-end">
 				  	{% if previous_page_link %}
@@ -78,17 +68,12 @@
 			</div>	
 
 {%endif%}
-<!-- <img src="data:image/png;base64, 
-
-							
-
-			" alt="Red dot"> -->
 
 <a href="/create/"><button type="button" class="btn btn-primary" id="adbtn">Add Courses</button></a>
 <script type="text/javascript">
 	
-	function update(name){
-		window.location.replace('/update/?name='+name);
+	function update(course_id){
+		window.location.replace('/update/?course_id='+ course_id);
 
 	}
 </script>

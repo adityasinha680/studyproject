@@ -166,13 +166,14 @@ fieldset {
 }
 .image{
 	height: 102px;
+  width: 100%
     background-color: #c4c4c4;
     overflow: hidden;
     border-radius: 3px 3px 0 0;
     border-bottom: 1px solid #f2f2f2;
 }
 .logo{
-	height: 61px;
+	   height: 61px;
     padding: 7px;
     position: absolute;
     top: 54px;
